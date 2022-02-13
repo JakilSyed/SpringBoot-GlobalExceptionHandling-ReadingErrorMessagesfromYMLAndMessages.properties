@@ -1,0 +1,26 @@
+Simple Sprint boot application with create, retrieve and delete endpoint's. SQL database + DataJPA
+Exception type(error/warning) is fetched from YML file. 
+And Error message is retrieved from messages.properties while throwing exception.
+
+
+
+1. Add the employee
+	Post: http://localhost:8081/EMS/addEmp
+	Request Body: -
+	{
+	    "eid" : 7,
+	    "ename" : "Jakil",
+	    "edept" : "IT"
+	}
+
+2. Get the employee by ID
+	GET:- http://localhost:8081/EMS/getEmp/{id}
+
+
+
+3. Delete the employee
+	DELETE:- http://localhost:8081/EMS/deleteEmp/{id}
+		
+		
+4. Welcome Endpoint to test the application
+	GET:- http://localhost:8081/EMS/welcome

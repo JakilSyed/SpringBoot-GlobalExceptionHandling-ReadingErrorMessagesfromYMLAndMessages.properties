@@ -1,0 +1,21 @@
+server.port: 8081
+
+#DB configuration driver/username/pass/
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/student_schema
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+exceptiontype:
+  type:
+    1001: "Error"
+    1002: "Warning"
+    1003: "Warning"
+
